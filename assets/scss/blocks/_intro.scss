@@ -1,0 +1,146 @@
+.intro {
+    width: 100%;
+    height: 100vh;
+    background: url("../img/intro/bg.jpg") center no-repeat;
+    background-size: cover;
+    
+        
+    display: flex;
+    align-items: center;
+    
+    position: relative;
+}
+
+.intro__inner {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    @include breakpoint($tablet-bp) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.intro__title {
+    font-weight: 400;
+    font-size: 96px;
+    color: $white;
+    text-transform: uppercase;
+    text-align: center;
+    
+    @include breakpoint($pc-bp) {
+        font-size: 80px;
+    }
+    
+    @include breakpoint($tablet-bp) {
+        display: none;
+    }
+}
+
+.intro__helper {
+    max-width: 660px;
+    margin: 0 auto;
+    overflow: hidden;
+    
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    @include breakpoint($tablet-bp) {
+        min-width: 320px;
+    }
+    
+    @include breakpoint($mobile-bp) {
+        min-width: 220px;
+    }
+}
+
+.intro__discription {
+    max-width: 325px;
+    margin: 0 auto;
+    
+    margin-top: 25px;
+    
+    text-align: center;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.intro__footer {
+    width: 100%;
+    max-width: 230px;
+    
+    @include breakpoint($tablet-bp) {
+        position: absolute;
+        left: 50%;
+        bottom: -50%;
+        transform: translateX(-50%);
+    }
+}
+
+.intro__social {
+    width: 100%;
+    margin-top: 35px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__icons {
+    opacity: .5;
+    transition: opacity .2s linear;
+    
+//    margin-right: 50px;
+    
+//    &:last-child {
+//        margin-right: 0;
+//    }
+    
+    &:hover {
+        opacity: 1;
+    }
+    
+//    @include breakpoint($tablet-bp) {
+//        margin-right: 46px;
+//    }
+}
+
+.intro__down {
+    opacity: .6;
+    margin-top: 13px;
+    display: block;
+    height: 7px;
+    
+    &:hover {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

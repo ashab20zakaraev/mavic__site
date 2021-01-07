@@ -1,0 +1,97 @@
+.tabs__content {
+    width: 100%;
+    max-width: 690px;
+    min-height: 72px;
+    height: auto;
+    
+    background-color: rgba($black, .3);
+    padding: 20px 20px 20px 39px;
+    border-radius: 2px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    @include breakpoint($tablet-bp) {
+        min-height: 62px;
+        padding: 14px 20px 14px 39px;
+    }
+    
+    @include breakpoint($mobile-bp) {
+        max-width: 730px;
+        padding: 14px;
+    }
+} 
+
+.tabs__text {
+    margin-top: 20px;
+    padding-left: 15px;
+    
+    display: none;
+    
+    &.open {
+        display: block;
+    }
+}
+
+.tabs__content-title {
+    font-weight: 500;
+    font-size: 21px;
+    
+    @include breakpoint($tablet-bp) {
+        font-size: 16px;
+    }
+}
+
+.ask__tabs-btn {
+    max-height: 72px;
+    background-color: $white;
+    padding: 27.5px 24px;
+    
+    transition: background-color .1s linear;
+    
+    svg {
+        fill: $lighten-black;
+        transition: fill .1s linear;
+    }
+    
+    &:hover {
+        background-color: $lighten-black;
+        
+        svg {
+            fill: $white;
+        }
+    }
+    
+    @include breakpoint($tablet-bp) {
+        height: 62px;
+    }
+    
+    @include breakpoint($mobile-bp) {
+        padding: 17.5px 14px;
+        height: 100%;
+    }
+    
+    &.open {
+        
+        .up {
+            display: block;
+        }
+        
+        .down {
+            display: none;
+        }
+    }
+}
+
+
+.up {
+    display: none;
+}
+
+
+
+
+
+
+

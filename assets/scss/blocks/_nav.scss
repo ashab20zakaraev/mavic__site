@@ -1,0 +1,82 @@
+.nav {
+    
+    @include breakpoint($pc-bp) {
+        display: none;
+        
+        position: absolute;
+        top: 100%;
+        left: 0;
+        
+        width: 100%;
+        height: 100vh;
+        
+        background-color: rgba($lighten-black, .9);
+        padding-top: 64px;
+        
+        &.active {
+            display: block;
+        }
+    }
+    
+}
+
+.nav__link {
+    font-weight: 500;
+    font-size: 15px;
+    color: $white;
+    text-transform: uppercase;
+    
+    margin: 0 10px;
+    
+    &--xl {
+        font-weight: 700;
+        font-size: 16px;
+    }
+    
+    &-dn {
+        display: none;
+    }
+    
+    &:hover {
+        text-decoration: underline;
+    }
+    
+    @include breakpoint($pc-bp) {
+        display: block;
+        
+        padding-left: 24px;
+        margin: 50px 0;
+        
+        font-size: 18px;
+        
+        &-dn {
+            border-top: 1px solid $white;
+            padding-top: 33px;
+        }
+        
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.header__tel {
+    
+    @include breakpoint($pc-bp) {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

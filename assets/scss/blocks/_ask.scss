@@ -1,0 +1,32 @@
+.ask__inner {
+    margin-top: 38px;
+    
+    position: relative;
+}
+
+.ask__tabs {
+    width: 100%;
+    max-width: 762px;
+    margin-bottom: 5px;
+    
+    display: flex;
+    
+    @include breakpoint($tablet-bp) {
+        margin: 0 auto 5px;
+    }
+}
+
+.ask__dron {
+    display: block;
+    
+    position: absolute;
+    bottom: 0;
+    right: 108px;
+    
+    @include breakpoint($pc-xl-bp) {
+        display: none;
+    }
+}
+
+
+

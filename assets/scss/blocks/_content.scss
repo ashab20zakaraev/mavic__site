@@ -1,0 +1,27 @@
+.content {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding: 90px 0;
+    
+    background: url("../img/section/bg.jpg") center no-repeat;
+    background-size: cover;
+    
+    position: relative;
+    
+    @include breakpoint($tablet-bp) {
+       padding: 80px 0 50px;
+    }
+}
+
+.content__footer {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    
+    transform: translateX(-50%);
+    
+    &--intro {
+        bottom: 30px;
+    }
+}

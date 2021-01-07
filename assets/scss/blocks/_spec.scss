@@ -1,0 +1,157 @@
+.spec__inner {
+    margin-top: 77px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    position: relative;
+    
+    @include breakpoint($pc-bp) {
+        max-width: 280px;
+        margin: 50px auto 0;
+    }
+}
+
+.spec__col-1,
+.spec__col-2 {
+    display: flex;
+    justify-content: space-between;
+    
+    @include breakpoint($pc-bp) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.spec__col-1 {
+    margin-bottom: 140px;
+    
+    @include breakpoint($pc-bp) {
+        margin-bottom: 0;
+    }
+}
+
+.spec__dron {
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    
+    @include breakpoint($pc-bp) {
+        display: none;
+    }
+}
+
+.spec__item {
+    width: 50%;
+    max-width: 280px;
+    
+    position: relative;
+    
+    .subtitle {
+        margin-bottom: 10px;
+    }
+    
+    &--1:after {
+        content: "";
+        
+        position: absolute;
+        top: 15px;
+        left: 70%;
+        z-index: 5;
+        
+        background-image: url('../img/spec/line1.png');
+        
+        width: 229px;
+        height: 115px;
+        
+        @include breakpoint($pc-bp) {
+            display: none;
+        }
+    }
+       
+    &--2:before {
+        content: "";
+        
+        position: absolute;
+        top: 15px;
+        right: 105%;
+        z-index: 5;
+        
+        background-image: url('../img/spec/line2.png');
+        
+        width: 258px;
+        height: 104px;
+        
+        @include breakpoint($pc-bp) {
+            display: none;
+        }
+    }
+        
+    &--3:after {
+        content: "";
+
+        position: absolute;
+        top: -70px;
+        left: 85%;
+        z-index: 5;
+
+        background-image: url('../img/spec/line3.png');
+
+        width: 346px;
+        height: 81px;
+        
+        @include breakpoint($pc-bp) {
+            display: none;
+        }
+    }
+        
+    &--4:after {
+        content: "";
+
+        position: absolute;
+        top: -56%;
+        right: 101%;
+        z-index: 5;
+
+        background-image: url('../img/spec/line4.png');
+
+        width: 124px;
+        height: 89px;
+        
+        @include breakpoint($pc-bp) {
+            display: none;
+        }
+    }
+
+    @include breakpoint($pc-bp) {
+        width: 100%;
+       margin-bottom: 25px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

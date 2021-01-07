@@ -1,0 +1,143 @@
+.advanteg__inner {
+    margin-top: 53px;
+    padding-left: 30px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    @include breakpoint($pc-bp) {
+        max-width: 579px;
+        margin: 53px auto 0;
+    }
+    
+    @include breakpoint($mobile-bp) {
+        max-width: 260px;
+        padding-left: 0;
+    }
+}
+
+.advanteg__item {
+    display: flex;
+    align-items: center;
+    
+    margin-bottom: 90px;
+    padding-left: 25px;
+    
+    position: relative;
+    
+    @include breakpoint($mobile-bp) {
+        padding-left: 0;
+        
+        flex-direction: column;
+    }
+}
+
+.advanteg__line {
+    position: absolute;
+    top: 36%;
+    left: 37%;
+    
+    &--2 {
+        top: 50%;
+        left: 24%;
+    }
+    
+    &--3 {
+        top: 62%;
+        left: 37%;
+    }
+    
+    @include breakpoint($pc-bp) {
+        display: none;
+    }
+}
+
+.advanteg__item-num {
+    font-weight: 700;
+    font-size: 36px;
+    margin-right: 5px;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    
+    @include breakpoint($mobile-bp) {
+        display: none;
+    }
+}
+
+.advanteg__img {
+    display: block;
+    max-width: 195px;
+    height: 130px;
+    
+    margin-right: 34px;
+    
+    position: relative;
+    z-index: 1;
+    
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    &:before {
+        content: "";
+        
+        position: absolute;
+        top: -12px;
+        right: -12px;
+        z-index: -1;
+        
+        width: 100%;
+        height: 100%;
+        
+        border: 2px solid $white;
+        
+        @include breakpoint($mobile-bp) {
+            display: none;
+        }
+    }
+    
+        @include breakpoint($mobile-bp) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+}
+
+.advanteg__content {
+    
+    .subtext {
+        display: block;
+        max-width: 300px;
+        
+        @include breakpoint($mobile-bp) {
+            margin: 0 auto;
+            text-align: center;
+        }
+    }
+    
+    .subtitle {
+        display: block;
+        max-width: 200px;
+        margin-bottom: 10px;
+        
+        @include breakpoint($mobile-bp) {
+            text-align: center;
+            margin: 0 auto 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+

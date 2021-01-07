@@ -1,0 +1,36 @@
+.text {
+    font-weight: 300;
+    font-size: 15px;
+    color: $white;
+    line-height: 1.4;
+    
+    &--xl {
+        font-size: 17px;
+        line-height: 1.6;
+    }
+    
+    &--mt {
+        p {
+            margin-top: 20px;
+        }
+    }
+    
+    @include breakpoint($pc-bp) {
+        margin: 0 auto;
+    }
+    
+    @include breakpoint($tablet-bp) {
+        font-size: 14px;
+        line-height: 1.3;    
+    }
+    
+    @include breakpoint($mobile-bp) {
+        font-size: 13px;
+    }
+}
+
+.subtext {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.2;
+}

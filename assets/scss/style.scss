@@ -1,0 +1,40 @@
+// Переменные
+@import 'source/vars';
+@import 'source/mixins';
+
+body {
+    margin: 0;
+
+    font-family: $mainFont;
+    font-weight: 400;
+    font-size: 16px;
+    color: $white;
+    
+    @include breakpoint($pc-bp) {
+        &.lock {
+            overflow: hidden;
+        }
+    }
+}
+
+// Сброс Стилей
+@import 'source/normalize';
+
+// Импорты
+@import 'source/container';
+@import 'blocks/slick';
+@import 'blocks/title';
+@import 'blocks/text';
+@import 'blocks/header';
+@import 'blocks/nav';
+@import 'blocks/burger';
+@import 'blocks/btn';
+@import 'blocks/intro';
+@import 'blocks/content';
+@import 'blocks/review';
+@import 'blocks/advanteg';
+@import 'blocks/spec';
+@import 'blocks/ask';
+@import 'blocks/tabs';
+@import 'blocks/contact';
+@import 'blocks/form';

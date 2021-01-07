@@ -1,0 +1,64 @@
+.slick-track {
+    width: 100%;
+    
+    display: flex;
+    outline: none;
+}
+
+.slick-arrow {
+    color: $white;
+    
+    position: absolute;
+    right: 32px;
+    bottom: -50px;
+    z-index: 100;
+    
+    @include breakpoint($tablet-bp) {
+        bottom: -55px;
+        right: 0;
+    } 
+}
+
+.slick-list {
+    max-width: 560px;
+    
+    overflow: hidden;
+    
+    @include breakpoint($pc-bp) {
+        margin: 0 auto;
+    } 
+}
+
+.slider__btn {
+    padding: 16px 26px;
+    background-color: $lighten-black;
+    transition: background-color .2s linear;
+    
+    svg {
+        stroke: $white;
+    }
+    
+    &:hover {
+        background-color: $white;
+        
+        svg {
+            stroke: $black;
+        }
+    }
+    
+    &.slick-disabled {
+        background-color: #b2b2b2;
+        opacity: .6;
+    }
+}
+
+.slider__btn-left {
+    margin-right: 62px;
+}
+
+
+
+
+
+
+

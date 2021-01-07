@@ -1,0 +1,24 @@
+.title {
+    font-weight: 400;
+    font-size: 44px;
+    color: $white;
+    text-align: left;
+    
+    @include breakpoint($pc-bp) {
+        text-align: center;
+    }
+    
+    @include breakpoint($tablet-bp) {
+        font-size: 40px;
+    }
+    
+    @include breakpoint($mobile-bp) {
+        font-size: 36px;
+    }
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 1.2;
+}
